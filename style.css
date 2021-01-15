@@ -1,0 +1,514 @@
+html{
+	height: 100%;
+}
+body{
+margin: 0;
+background-image:url(image/bg.png);
+height: 100%;
+}
+/*============================
+Шапка сайта
+=================================*/
+
+#shapka{
+
+width: 100%;
+height: 61px;
+background: #0c7cef;
+position: relative;
+
+}	
+
+#title_color{
+ color: purple;
+ background: green;
+ margin: 60px;
+
+}
+
+#show{
+ color: purple;
+ background: green;
+ margin: 60px;
+
+}
+
+
+#logo{
+
+width: 56px;
+height: 100%;
+position: relative;
+float: left;
+
+}
+#logo img{
+width: 100%;
+position: absolute;
+top: 2px;
+left: 10px;
+
+}
+#logo span{
+
+font-size: 28px;
+position: absolute;
+top: 16px;
+left: 88px;
+color: white;
+
+}
+#menu{
+	float: right;
+	height: 100%;
+}
+#menu a{
+	color: white;
+    text-decoration: none;
+    font-size: 20px;
+    height: calc(100% - 18px);
+    display: block;
+    float: left;
+    padding: 18px 10px 0;
+}
+#menu a:hover {
+
+background: #06c9f5fa;
+}
+
+/*=====================
+Основной блок с контактами
+=======================*/
+#content {
+width: 800px;
+height: calc(100% - 400px);
+margin: 0 auto;
+margin-top: 150px;
+background: #2b95f1;
+overflow: hidden;
+}
+ h1{
+    color: white;    
+    margin: auto;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+h2{
+    color: white;    
+    margin: auto;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+/*============================
+левий блок со списками и контактами
+==============================*/
+#users{
+	width: 260px;
+	height: 100%;
+	float: left;
+}
+/*=============================
+                 Поиск
+=============================*/
+/*#poisk{
+	height: 30px;
+    padding: 10px;
+    width: calc(100% - 3px);
+}
+#poisk input{
+	background: #f9ebeb;
+    border: none;
+    height: 100%;   
+    margin: 0;
+    float: left;
+    margin-right: 10px;
+    width: calc(75% - 10px);
+    outline: none;
+    padding: 0 10px;
+}
+
+#poisk button{
+width: 30px;
+height: 30px;
+border: none;
+background: #f9ebeb;
+outline: none;
+cursor: pointer;
+padding: 0;
+}
+#poisk button:active{
+	background: #ca3464;
+}
+#poisk button img{
+width: 100%;
+height: 100%;
+
+}*/
+/*===========================
+Контакти
+==========================*/
+#spisok{
+	height: calc(100% - 50px);
+	overflow-y: auto;
+}
+#spisok ul{
+list-style: none;
+margin: 0;
+padding: 0;
+width: 100%;
+
+}
+#spisok ul li{
+	padding: 10px;
+	position: relative;
+	width:calc(100% - 20px);
+}
+#spisok ul li a{
+    text-decoration: none;
+    color:#505050; 
+}
+#spisok ul .avatar{
+width: 60px;
+height: 60px;
+float: left;
+margin-right: 10px;
+
+}
+#spisok ul .avatar img{
+	width: 100%;
+	height:100%;
+}
+#spisok ul li .time{
+	position: absolute;
+    top: 10px;    
+    right: 10px;
+}
+#spisok h2,
+#spisok p{
+	margin: 0;
+}
+#spisok h2{
+	margin-bottom: 5px;
+}
+/*--------
+делаем красивый скрол
+----------------*/
+#spisok::-webkit-scrollbar-track,
+#spisok-soobsheniya::-webkit-scrollbar-track,
+.modal .content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#spisok::-webkit-scrollbar,
+#spisok-soobsheniya::-webkit-scrollbar,
+.modal .content::-webkit-scrollbar{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+#spisok::-webkit-scrollbar-thumb,
+#spisok-soobsheniya::-webkit-scrollbar-thumb,
+.modal .content::-webkit-scrollbar-thumb{
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+/*================
+Стили для переписки с пользователем
+==================*/
+#soobsheniya{
+	float: right;
+	width:  calc(800px - 260px);
+	height: 100%;
+	overflow-y: auto;
+
+}
+#spisok-soobsheniya{
+height: 90%;
+overflow-y: auto;
+
+}
+#soobsheniya ul{
+
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#soobsheniya ul .avatar{
+	width: 60px;
+	height: 60px;
+	float: left:10px;
+}
+#soobsheniya ul li{
+	position: relative;
+	padding: 10px;
+}
+#soobsheniya ul li a{
+    text-decoration: none;
+    color:#505050; 
+}
+#soobsheniya ul .avatar img{
+width: 100%;
+height: 100%;
+}
+#soobsheniya ul h2,
+#soobsheniya ul p{
+	margin: 0;
+}
+#soobsheniya ul .time{
+	position: absolute;
+	top:20px;
+	right: 20px;
+}
+
+/*------------------------
+Стиль для формы отправки сообщений
+----------------------------*/
+
+#form{
+	padding: 10px;
+    height: calc(10% - 20px);
+}
+
+#form textarea{
+width: 85%;
+height: 90%;
+}
+
+#form button{
+width: 60px;
+height: 60px;
+outline: none;
+cursor: pointer;
+background: none;
+border: 0;
+
+}
+#form button img{
+width: 100%;
+height: 100%;
+
+}
+/*--------------------
+Стили для модельных окон
+----------------*/
+.modal{
+	display: none;
+	width: 360px;
+	background: white;
+	border-radius: 10px;
+	border:2px solid #ce2a61;
+	position: absolute;
+	top: 80px;
+	left:calc(50% - 200px);
+	padding: 20px;
+	max-height: 400px;
+    z-index: 9999;   
+    
+}
+
+.modal .close{
+	position: absolute;
+	top:10px; 
+	right: 10px;
+	cursor: pointer;
+}
+.modal .content{
+overflow-y: auto;
+height: 380px;
+margin-top:20px;
+	}
+
+#contacts-modal ul{
+
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#contacts-modal ul .avatar{
+	width: 60px;
+	height: 60px;
+	float: left: 10px;
+}
+#contacts-modal ul li{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+}
+#contacts-modal ul .avatar img{
+width: 100%;
+height: 100%;
+}
+#contacts-modal ul h2
+{
+margin-left: 60px;
+margin-top: -47px;
+}
+
+.modal_vhod{
+	display: none;
+	background: white;    
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid #ce2a61;
+    top: 80px;
+    left:calc(50% - 200px); 
+    position: absolute;
+}
+#avtorizaziya .close{
+	position: absolute;
+	top:10px; 
+	right: 10px;
+	cursor: pointer;
+}
+#avtorizaziya h2{
+    position: relative;
+    left: 26px;
+    margin: 0;
+    top: 10px;
+    width: fit-content;
+}
+#avtorizaziya h3{
+	position: absolute;
+    top: 80px;
+    left: 26px;
+    font-size: 1.5em;
+    margin: 0;
+}
+#avtorizaziya p {
+	position: absolute;
+    top: 200px;
+    left: 80px;
+}
+#avtorizaziya button{
+	position: relative;
+    width: 100px;
+    height: 35px;
+    top: 150px;
+    float: right;
+    margin-right: 10px;
+    border: none;
+    border-color: #ce2a61;
+    cursor: pointer;
+    outline: none;
+    background: #ce2a61;
+}
+#avtorizaziya button h1{
+	position: relative;
+    margin: auto;
+    color: #f9f7f7;
+    font-family: serif;
+    font-style: inherit;
+}
+#name {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    height: 35px;
+    width: 200px;
+}
+#parol {
+	position: absolute;
+    top: 113px;
+    left: 20px;
+    height: 35px;
+    width: 200px;
+}
+.modal_regist{
+	display: none;
+	background: white;    
+    height: 290px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid #ce2a61;
+    top: 80px;
+    left:calc(50% - 200px); 
+    position: absolute;
+}
+#register .close{
+	position: absolute;
+	top:10px; 
+	right: 10px;
+	cursor: pointer;
+}
+#register h1{
+    position: relative;
+    left: 26px;
+    margin: 0;
+    top: 13px;
+    width: fit-content;
+    font-size: 1.3em
+}
+#register h2{
+	position: absolute;
+    top: 86px;
+    left: 26px;
+    font-size: 1.3em;
+    margin: 0;
+}
+#register h3{
+	position: absolute;
+    top: 160px;
+    left: 26px;
+    font-size: 1.3em;
+    margin: 0;
+}
+#register button{
+	position: relative;
+    width: 100px;
+    height: 35px;
+    top: 220px;
+    float: right;
+    margin-right: 10px;
+    border: none;
+    border-color: #ce2a61;
+    cursor: pointer;
+    outline: none;
+    background: #ce2a61;
+}
+#register button h4{
+	position: absolute;
+    text-decoration: none;
+    top: 8px;
+    left: 6px;
+    margin: auto;
+    color: #f9f7f7;
+    font-family: serif;
+    font-style: initial;
+    font-size: 1.3em;
+}
+}
+#name {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    height: 35px;
+    width: 200px;
+}
+#parol {
+	position: absolute;
+    top: 113px;
+    left: 20px;
+    height: 35px;
+    width: 200px;
+}
+#email {
+    position: absolute;
+    top: 186px;
+    left: 20px;
+    height: 35px;
+    width: 200px;
+}
